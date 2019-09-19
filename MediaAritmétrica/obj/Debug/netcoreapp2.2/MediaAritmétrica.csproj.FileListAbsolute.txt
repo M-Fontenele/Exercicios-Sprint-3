@@ -1,0 +1,11 @@
+C:\Users\47736940843\Documents\Exercícios\MediaAritmétrica\obj\Debug\netcoreapp2.2\MediaAritmétrica.csprojAssemblyReference.cache
+C:\Users\47736940843\Documents\Exercícios\MediaAritmétrica\obj\Debug\netcoreapp2.2\MediaAritmétrica.csproj.CoreCompileInputs.cache
+C:\Users\47736940843\Documents\Exercícios\MediaAritmétrica\obj\Debug\netcoreapp2.2\MediaAritmétrica.AssemblyInfoInputs.cache
+C:\Users\47736940843\Documents\Exercícios\MediaAritmétrica\obj\Debug\netcoreapp2.2\MediaAritmétrica.AssemblyInfo.cs
+C:\Users\47736940843\Documents\Exercícios\MediaAritmétrica\bin\Debug\netcoreapp2.2\MediaAritmétrica.deps.json
+C:\Users\47736940843\Documents\Exercícios\MediaAritmétrica\bin\Debug\netcoreapp2.2\MediaAritmétrica.runtimeconfig.json
+C:\Users\47736940843\Documents\Exercícios\MediaAritmétrica\bin\Debug\netcoreapp2.2\MediaAritmétrica.runtimeconfig.dev.json
+C:\Users\47736940843\Documents\Exercícios\MediaAritmétrica\bin\Debug\netcoreapp2.2\MediaAritmétrica.dll
+C:\Users\47736940843\Documents\Exercícios\MediaAritmétrica\bin\Debug\netcoreapp2.2\MediaAritmétrica.pdb
+C:\Users\47736940843\Documents\Exercícios\MediaAritmétrica\obj\Debug\netcoreapp2.2\MediaAritmétrica.dll
+C:\Users\47736940843\Documents\Exercícios\MediaAritmétrica\obj\Debug\netcoreapp2.2\MediaAritmétrica.pdb
