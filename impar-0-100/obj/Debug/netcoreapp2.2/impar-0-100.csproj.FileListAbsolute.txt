@@ -1,0 +1,11 @@
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\impar-0-100\bin\Debug\netcoreapp2.2\impar-0-100.deps.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\impar-0-100\bin\Debug\netcoreapp2.2\impar-0-100.runtimeconfig.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\impar-0-100\bin\Debug\netcoreapp2.2\impar-0-100.runtimeconfig.dev.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\impar-0-100\bin\Debug\netcoreapp2.2\impar-0-100.dll
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\impar-0-100\bin\Debug\netcoreapp2.2\impar-0-100.pdb
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\impar-0-100\obj\Debug\netcoreapp2.2\impar-0-100.csprojAssemblyReference.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\impar-0-100\obj\Debug\netcoreapp2.2\impar-0-100.csproj.CoreCompileInputs.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\impar-0-100\obj\Debug\netcoreapp2.2\impar-0-100.AssemblyInfoInputs.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\impar-0-100\obj\Debug\netcoreapp2.2\impar-0-100.AssemblyInfo.cs
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\impar-0-100\obj\Debug\netcoreapp2.2\impar-0-100.dll
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\impar-0-100\obj\Debug\netcoreapp2.2\impar-0-100.pdb

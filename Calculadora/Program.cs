@@ -8,8 +8,7 @@ namespace Calculadora
         {
             int num1 = 0;
             int num2 = 0;
-            string oper, erro;
-            int calculo = 0;
+            string oper;
 
             Console.WriteLine("Digite o 1º número:");
             num1 = int.Parse(Console.ReadLine());
@@ -18,30 +17,30 @@ namespace Calculadora
             Console.WriteLine("Digite o operador:");
             oper = Console.ReadLine();
 
+            while(!(oper == "+" || oper == "-" || oper == "*" || oper == "/" || oper == "%")){
+                Console.WriteLine("ERRO!");
+                Console.WriteLine("operador invalido digite novamente: ");
+                oper = Console.ReadLine();
+            }
+
             switch (oper) {
                 case "+":
-                    calculo = num1 + num2;
-                    Console.WriteLine($"O resultado de {num1} + {num2} é igual a " + calculo);
+                    Console.WriteLine($"O resultado de {num1} + {num2} é igual a " + (num1 + num2));
                     break;
                 case "-":
-                    calculo = num1 - num2;
-                    Console.WriteLine($"O resultado de {num1} - {num2} é igual a " + calculo);
+                    Console.WriteLine($"O resultado de {num1} - {num2} é igual a " + (num1 - num2));
                     break;
                 case "*":
-                    calculo = num1 * num2;
-                    Console.WriteLine($"O resultado de {num1} * {num2} é igual a " + calculo);
+                    Console.WriteLine($"O resultado de {num1} * {num2} é igual a " + (num1 * num2));
                     break;
                 case "/":
-                    calculo = num1 / num2;
-                    Console.WriteLine($"O resultado de {num1} / {num2} é igual a " + calculo);
+                    Console.WriteLine($"O resultado de {num1} / {num2} é igual a " + (num1 / num2));
                     break;
                 case "%":
-                    calculo = num1 % num2;
-                    Console.WriteLine($"O resultado de {num1} % {num2} é igual a " + calculo);
+                    Console.WriteLine($"O resultado de {num1} % {num2} é igual a " + (num1 % num2));
                     break;
                 default:
-                    erro = "Operação inválida";
-                    Console.WriteLine(erro);
+                    Console.WriteLine("Operação inválida");
 
                     break;
             }
