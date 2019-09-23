@@ -1,0 +1,11 @@
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\áreas-de-figuras\obj\Debug\netcoreapp2.2\áreas-de-figuras.csprojAssemblyReference.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\áreas-de-figuras\obj\Debug\netcoreapp2.2\áreas-de-figuras.csproj.CoreCompileInputs.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\áreas-de-figuras\obj\Debug\netcoreapp2.2\áreas-de-figuras.AssemblyInfoInputs.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\áreas-de-figuras\obj\Debug\netcoreapp2.2\áreas-de-figuras.AssemblyInfo.cs
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\áreas-de-figuras\bin\Debug\netcoreapp2.2\áreas-de-figuras.deps.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\áreas-de-figuras\bin\Debug\netcoreapp2.2\áreas-de-figuras.runtimeconfig.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\áreas-de-figuras\bin\Debug\netcoreapp2.2\áreas-de-figuras.runtimeconfig.dev.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\áreas-de-figuras\bin\Debug\netcoreapp2.2\áreas-de-figuras.dll
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\áreas-de-figuras\bin\Debug\netcoreapp2.2\áreas-de-figuras.pdb
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\áreas-de-figuras\obj\Debug\netcoreapp2.2\áreas-de-figuras.dll
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\áreas-de-figuras\obj\Debug\netcoreapp2.2\áreas-de-figuras.pdb
