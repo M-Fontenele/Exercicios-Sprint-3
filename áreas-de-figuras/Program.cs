@@ -46,11 +46,11 @@ namespace áreas_de_figuras
                     Console.WriteLine("A área do Retângulo é :" + (hre * bre));
                     break;
                 case "6":
-                    Console.WriteLine("Qual a Diagonal maior do Losango ");
-                    double hlo = double.Parse(Console.ReadLine());
                     Console.WriteLine("Qual a Diagonal menor do Losango ");
-                    double blo = double.Parse(Console.ReadLine());
-                    Console.WriteLine("A área do losango é :" + ((hlo * blo) / 2) );
+                    double dme = double.Parse(Console.ReadLine());
+                    Console.WriteLine("Qual a Diagonal maior do Losango ");
+                    double dma = double.Parse(Console.ReadLine());
+                    Console.WriteLine("A área do losango é :" + ((dme * dma) / 2) );
                     break;
             }
 

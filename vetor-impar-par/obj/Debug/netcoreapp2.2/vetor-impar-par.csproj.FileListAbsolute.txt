@@ -1,0 +1,11 @@
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\vetor-impar-par\obj\Debug\netcoreapp2.2\vetor-impar-par.csprojAssemblyReference.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\vetor-impar-par\obj\Debug\netcoreapp2.2\vetor-impar-par.csproj.CoreCompileInputs.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\vetor-impar-par\obj\Debug\netcoreapp2.2\vetor-impar-par.AssemblyInfoInputs.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\vetor-impar-par\obj\Debug\netcoreapp2.2\vetor-impar-par.AssemblyInfo.cs
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\vetor-impar-par\bin\Debug\netcoreapp2.2\vetor-impar-par.deps.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\vetor-impar-par\bin\Debug\netcoreapp2.2\vetor-impar-par.runtimeconfig.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\vetor-impar-par\bin\Debug\netcoreapp2.2\vetor-impar-par.runtimeconfig.dev.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\vetor-impar-par\bin\Debug\netcoreapp2.2\vetor-impar-par.dll
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\vetor-impar-par\bin\Debug\netcoreapp2.2\vetor-impar-par.pdb
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\vetor-impar-par\obj\Debug\netcoreapp2.2\vetor-impar-par.dll
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\vetor-impar-par\obj\Debug\netcoreapp2.2\vetor-impar-par.pdb
