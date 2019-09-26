@@ -1,0 +1,11 @@
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\media-temperatura\bin\Debug\netcoreapp2.2\media-temperatura.deps.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\media-temperatura\bin\Debug\netcoreapp2.2\media-temperatura.runtimeconfig.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\media-temperatura\bin\Debug\netcoreapp2.2\media-temperatura.runtimeconfig.dev.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\media-temperatura\bin\Debug\netcoreapp2.2\media-temperatura.dll
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\media-temperatura\bin\Debug\netcoreapp2.2\media-temperatura.pdb
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\media-temperatura\obj\Debug\netcoreapp2.2\media-temperatura.csprojAssemblyReference.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\media-temperatura\obj\Debug\netcoreapp2.2\media-temperatura.csproj.CoreCompileInputs.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\media-temperatura\obj\Debug\netcoreapp2.2\media-temperatura.AssemblyInfoInputs.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\media-temperatura\obj\Debug\netcoreapp2.2\media-temperatura.AssemblyInfo.cs
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\media-temperatura\obj\Debug\netcoreapp2.2\media-temperatura.dll
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\media-temperatura\obj\Debug\netcoreapp2.2\media-temperatura.pdb
