@@ -1,0 +1,11 @@
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-Nposições\bin\Debug\netcoreapp2.2\Vetor-Nposições.deps.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-Nposições\bin\Debug\netcoreapp2.2\Vetor-Nposições.runtimeconfig.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-Nposições\bin\Debug\netcoreapp2.2\Vetor-Nposições.runtimeconfig.dev.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-Nposições\bin\Debug\netcoreapp2.2\Vetor-Nposições.dll
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-Nposições\bin\Debug\netcoreapp2.2\Vetor-Nposições.pdb
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-Nposições\obj\Debug\netcoreapp2.2\Vetor-Nposições.csprojAssemblyReference.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-Nposições\obj\Debug\netcoreapp2.2\Vetor-Nposições.csproj.CoreCompileInputs.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-Nposições\obj\Debug\netcoreapp2.2\Vetor-Nposições.AssemblyInfoInputs.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-Nposições\obj\Debug\netcoreapp2.2\Vetor-Nposições.AssemblyInfo.cs
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-Nposições\obj\Debug\netcoreapp2.2\Vetor-Nposições.dll
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-Nposições\obj\Debug\netcoreapp2.2\Vetor-Nposições.pdb
