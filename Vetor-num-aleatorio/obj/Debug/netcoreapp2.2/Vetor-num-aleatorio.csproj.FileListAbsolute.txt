@@ -1,0 +1,11 @@
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-num-aleatorio\bin\Debug\netcoreapp2.2\Vetor-num-aleatorio.deps.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-num-aleatorio\bin\Debug\netcoreapp2.2\Vetor-num-aleatorio.runtimeconfig.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-num-aleatorio\bin\Debug\netcoreapp2.2\Vetor-num-aleatorio.runtimeconfig.dev.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-num-aleatorio\bin\Debug\netcoreapp2.2\Vetor-num-aleatorio.dll
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-num-aleatorio\bin\Debug\netcoreapp2.2\Vetor-num-aleatorio.pdb
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-num-aleatorio\obj\Debug\netcoreapp2.2\Vetor-num-aleatorio.csprojAssemblyReference.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-num-aleatorio\obj\Debug\netcoreapp2.2\Vetor-num-aleatorio.csproj.CoreCompileInputs.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-num-aleatorio\obj\Debug\netcoreapp2.2\Vetor-num-aleatorio.AssemblyInfoInputs.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-num-aleatorio\obj\Debug\netcoreapp2.2\Vetor-num-aleatorio.AssemblyInfo.cs
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-num-aleatorio\obj\Debug\netcoreapp2.2\Vetor-num-aleatorio.dll
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Vetor-num-aleatorio\obj\Debug\netcoreapp2.2\Vetor-num-aleatorio.pdb

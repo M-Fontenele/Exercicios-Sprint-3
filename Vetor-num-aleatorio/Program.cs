@@ -10,10 +10,10 @@ namespace Vetor_num_aleatorio
 
             for(int i = 0; i < 10; i++){
                 Random GeradorAleatorio = new Random();
-                vetor[i] = GeradorAleatorio;
+                vetor[i] = GeradorAleatorio.Next();
             }
             for(int i = 0; i < 10; i++){
-                
+                System.Console.WriteLine(vetor[i]);
             }
         }
     }
