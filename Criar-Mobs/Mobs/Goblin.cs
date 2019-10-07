@@ -10,5 +10,6 @@ namespace CriarMobs.Mobs
         int Inteligencia {get;set;}
         string EquipamentodeAtaque {get;set;}
         string EquipamentodeDefesa {get;set;}
+        
     }
 }
