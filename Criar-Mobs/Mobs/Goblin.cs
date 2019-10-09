@@ -4,12 +4,12 @@ namespace CriarMobs.Mobs
 {
     public class Goblin
     {
-        int Vida {get;set;}
-        int Forca {get;set;}
-        int Destreza {get;set;}
-        int Inteligencia {get;set;}
-        string EquipamentodeAtaque {get;set;}
-        string EquipamentodeDefesa {get;set;}
+        public int Vida {get;set;}
+        public int Forca {get;set;}
+        public int Destreza {get;set;}
+        public int Inteligencia {get;set;}
+        public string EquipamentodeAtaque {get;set;}
+        public string EquipamentodeDefesa {get;set;}
         
     }
 }
