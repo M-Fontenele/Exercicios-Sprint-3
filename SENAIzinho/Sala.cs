@@ -40,16 +40,14 @@ namespace SENAIzinho
             }return "ERRO.";
         }
 
-        public string MostrarAluno()
+        public void MostrarAluno()
         {   
             string todosOsAlunos;
             string alunoad;
 
             foreach(string item in Alunos){
-                alunoad = item;
-                todosOsAlunos = alunoad;
-                return todosOsAlunos;
-            }return "ERRO";
+                System.Console.WriteLine();
+            }
         }
     }
 }

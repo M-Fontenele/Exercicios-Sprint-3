@@ -37,6 +37,7 @@ namespace TodoList
                 System.Console.WriteLine("TODO LIST");
                 System.Console.WriteLine();
                 ListaItens(todoList);
+
                 System.Console.WriteLine();
                 System.Console.WriteLine("Digite uma opção:");
                 System.Console.WriteLine("1 - Adicionar Item");
@@ -44,6 +45,7 @@ namespace TodoList
                 System.Console.WriteLine("3 - Sair do programa");
                 System.Console.Write("Opção: ");
                 opcao = int.Parse(Console.ReadLine());
+
 
                 switch(opcao)
                 {
@@ -55,6 +57,7 @@ namespace TodoList
                     break;
                     case 3:
                         System.Console.WriteLine("Tchau!");
+                        SaveItem(todoList,filePath);
                     break;
                     default:
                         System.Console.WriteLine("Opção inválida");
@@ -89,7 +92,6 @@ namespace TodoList
             System.Console.Write("Nota: ");
             string nota = Console.ReadLine();
             TodoItem item = new TodoItem(titulo, nota);
-
             todoList.Add(item);
         }
 
@@ -125,5 +127,38 @@ namespace TodoList
                 }
             } while(true);
         }
+
+        #region Salvando arquivo
+        static void SaveItem(List<TodoItem> lista,string filePath)
+        {   
+            List<string> linhas = new List<string>();
+            linhas.Add("\"title,note\"");
+            foreach(TodoItem item in lista)
+            {
+                string titulo = "\"" + item.Titulo + "\"";
+                string nota = "\"" + item.Nota + "\"";
+                linhas.Add(titulo + "," + nota);
+            }
+            string tryAgain = "n";
+            do
+            {
+
+                try
+                {
+                    File.WriteAllLines(filePath, linhas);
+                    tryAgain = "n";
+                }catch(IOException e)
+                {
+                    System.Console.WriteLine("Erro na gravação do arquivo");
+                    System.Console.WriteLine(e.Message);
+                    do
+                    {
+                        System.Console.WriteLine("Deseja tentar novamente (s/n)?");
+                        tryAgain = Console.ReadLine().ToLower();
+                    } while (tryAgain == "s" || tryAgain == "n");
+                }
+            } while (tryAgain !="n");
+        }
+        #endregion
     }
 }

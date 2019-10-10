@@ -55,5 +55,7 @@ namespace SENAIzinho
                 }
             }while(escolha != "0");
         }
+
+        Void
     }
 }
