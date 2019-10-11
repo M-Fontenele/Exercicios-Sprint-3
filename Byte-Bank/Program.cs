@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Data;
+using System;
 using ByteBank;
 
 namespace Byte_Bank
@@ -41,15 +42,15 @@ namespace Byte_Bank
 
             ContaCorrente contaCorrente1 = new ContaCorrente(agencia,conta,cliente1);
             double saldo;
+            bool depositou = false;
             do{
                 Console.Write("Entre com o saldo: ");
                 saldo = double.Parse(Console.ReadLine());
-                if (saldo >= 0){
-                    contaCorrente1.Saldo = saldo;
-                } else {
-                    Console.WriteLine("Valor do saldo deve ser positivo.");
+                depositou = contaCorrente1.Deposito(saldo);
+                if (!depositou){
+                    Console.WriteLine("Valor do saldo deve ser positivo");
                 }
-            } while(saldo < 0);
+            } while(!depositou);
             #endregion
 
             Cliente cliente2 = new Cliente("Cesar","123.123.123.12","1@A.com");
@@ -94,7 +95,7 @@ namespace Byte_Bank
             Console.WriteLine();
             Console.Write("Digite o valor da Transferência: ");
             valor = double.Parse(Console.ReadLine());
-            if (contaCorrente1.Transferencia(contaCorrente1,valor)){
+            if (contaCorrente1.Transferencia(contaCorrente2,valor)){
                 Console.WriteLine("Transferencia Efetuada");
             } else{
                 Console.WriteLine("Não foi possível realizar a operação.");

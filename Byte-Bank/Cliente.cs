@@ -7,7 +7,12 @@ namespace ByteBank
         public string Cpf {get;set;}
         public string Nome {get;set;}
         public string Email {get;set;}
-        public string Senha {get;set;}
+        private string _Senha {get;set;}
+
+        public string Senha
+        {
+            get { return _Senha; }
+        }
 
         public Cliente(string Nome, string Cpf, string Email){
             this.Nome = Nome;
@@ -16,7 +21,7 @@ namespace ByteBank
         }
         public bool TrocaSenha(string senha){
             if ((senha.Length > 6) && (senha.Length < 16)){
-                this.Senha = senha;
+                this._Senha = senha;
                 return true;
             }else{
                 return false;

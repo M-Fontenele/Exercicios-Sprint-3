@@ -21,10 +21,10 @@ namespace SENAIzinho
 
         public void CadastrarAluno(Aluno[] alunos, int totalALuno, out int alunosCadastrados) {
             if(alunosCadastrados < totalALuno)
-            {
+            { 
                 Console.WriteLine("Cadastro de alunos");
                 Console.WriteLine("");
-                Console.WriteLine("Nome:");
+                Console.Write("Nome: ");
                 string nome = Console.ReadLine();
                 Console.Write("Dt Nascimento: ");
                 DateTime dtNascimento = DateTime.Parse(Console.ReadLine());
