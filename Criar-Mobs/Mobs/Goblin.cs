@@ -20,9 +20,9 @@ namespace CriarMobs.Mobs
             this.Destreza = numAleatorio.Next(7,9);
             this.Inteligencia = numAleatorio.Next(1,3);
             int arma = numAleatorio.Next(1,10);
-            if(arma > 0 && arma <= 8){
+            if(arma > 0 && arma <= 7){
                 this.EquipamentodeAtaque = "Porrete";
-            }else if (arma > 0 && arma <= 10){
+            }else if (arma > 7 && arma <= 10){
                 this.EquipamentodeAtaque = "Adaga";
             }
             if(Inteligencia == 3){
