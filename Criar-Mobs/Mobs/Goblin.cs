@@ -1,17 +1,10 @@
 using System;
+using CriarMobs.Mobs;
 
 namespace CriarMobs.Mobs
 {
-    public class Goblin
+    public class Goblin : Monstros
     {
-        public int Vida {get;set;}
-        public int Forca {get;set;}
-        public int Destreza {get;set;}
-        public int Inteligencia {get;set;}
-        public string EquipamentodeAtaque {get;set;}
-        public string EquipamentodeDefesa {get;set;}
-        
-
         public Goblin()
         {
             Random numAleatorio = new Random();
@@ -28,7 +21,6 @@ namespace CriarMobs.Mobs
             if(Inteligencia == 3){
                 this.EquipamentodeDefesa = "Escudo de madeira";
             }
-
         }
     }
 }
