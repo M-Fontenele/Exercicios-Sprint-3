@@ -1,0 +1,11 @@
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\AuxiliarDeReciclagem\bin\Debug\netcoreapp2.2\AuxiliarDeReciclagem.deps.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\AuxiliarDeReciclagem\bin\Debug\netcoreapp2.2\AuxiliarDeReciclagem.runtimeconfig.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\AuxiliarDeReciclagem\bin\Debug\netcoreapp2.2\AuxiliarDeReciclagem.runtimeconfig.dev.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\AuxiliarDeReciclagem\bin\Debug\netcoreapp2.2\AuxiliarDeReciclagem.dll
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\AuxiliarDeReciclagem\bin\Debug\netcoreapp2.2\AuxiliarDeReciclagem.pdb
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\AuxiliarDeReciclagem\obj\Debug\netcoreapp2.2\AuxiliarDeReciclagem.csprojAssemblyReference.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\AuxiliarDeReciclagem\obj\Debug\netcoreapp2.2\AuxiliarDeReciclagem.csproj.CoreCompileInputs.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\AuxiliarDeReciclagem\obj\Debug\netcoreapp2.2\AuxiliarDeReciclagem.AssemblyInfoInputs.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\AuxiliarDeReciclagem\obj\Debug\netcoreapp2.2\AuxiliarDeReciclagem.AssemblyInfo.cs
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\AuxiliarDeReciclagem\obj\Debug\netcoreapp2.2\AuxiliarDeReciclagem.dll
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\AuxiliarDeReciclagem\obj\Debug\netcoreapp2.2\AuxiliarDeReciclagem.pdb
