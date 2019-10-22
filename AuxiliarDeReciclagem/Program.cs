@@ -8,76 +8,89 @@ using AuxiliarDeReciclagem.Lixo;
 
 namespace AuxiliarDeReciclagem
 {
-    enum LixosEnum : int
-        {
-            Jornal,
-            Garrafa865PET,
-            Guarda866Chuva,
-            Latinha,
-            Garrafa,
-            Papel,
-            Resto865de865Comida
+    // enum LixosEnum : int
+    //     {
+    //         Jornal,
+    //         Garrafa865PET,
+    //         Guarda866Chuva,
+    //         Latinha,
+    //         Garrafa,
+    //         Papel,
+    //         Resto865de865Comida
 
-        }
+    //     }
     class Program
     {
         static void Main(string[] args)
         {
 
-            string[] ItensLixo = Enum.GetNames(typeof(LixosEnum));
+            Dictionary<string, int> Lixos = new Dictionary<string, int>();
 
-            var ListaDeItens = new List<string>()
-            {
-                "   - 0              ",
-                "   - 1              ",
-                "   - 2              ",
-                "   - 3              ",
-                "   - 4              ",
-                "   - 5              ",
-                "   - 6              ",
-            };
+                Lixos.Add("Jornal", 1);
+                Lixos.Add("Guarda-Chuva", 2);
+                Lixos.Add("Garrafa PET", 3);
+                Lixos.Add("Garrafa", 4);
+                Lixos.Add("Resto de Comida", 5);
+                Lixos.Add("Latinha", 6);
 
-            int Escolha; 
+                
 
-            do{
+            
 
-                Console.Clear();
+            // string[] ItensLixo = Enum.GetNames(typeof(LixosEnum));
 
-                System.Console.WriteLine("Escolha qual o item que quer analisar ( Para sair digite 0)");
+            // var ListaDeItens = new List<string>()
+            // {
+            //     "   - 0              ",
+            //     "   - 1              ",
+            //     "   - 2              ",
+            //     "   - 3              ",
+            //     "   - 4              ",
+            //     "   - 5              ",
+            //     "   - 6              ",
+            // };
 
-                for (int i = 0; i < ListaDeItens.Count; i++)
-                {
-                    string titulo = ItensLixo[i];
+            // int Escolha; 
 
-                    System.Console.WriteLine(ListaDeItens[i].Replace(i.ToString(), titulo).Replace("865", " ").Replace("-", $"{i + 1}").Replace("866", "-"));
-                }
+            // do{
 
-                Escolha = int.Parse(Console.ReadLine());
+            //     Console.Clear();
 
-                switch (Escolha){
+            //     System.Console.WriteLine("Escolha qual o item que quer analisar ( Para sair digite 0)");
+
+            //     for (int i = 0; i < ListaDeItens.Count; i++)
+            //     {
+            //         string titulo = ItensLixo[i];
+
+            //         System.Console.WriteLine(ListaDeItens[i].Replace(i.ToString(), titulo).Replace("865", " ").Replace("-", $"{i + 1}").Replace("866", "-"));
+            //     }
+
+            //     Escolha = int.Parse(Console.ReadLine());
+
+            //     switch (Escolha){
                     
-                    case 1 :
+            //         case 1 :
                         
-                        break;
-                    case 2 :
+            //             break;
+            //         case 2 :
                         
-                        break;
-                    case 3 :
+            //             break;
+            //         case 3 :
                         
-                        break;
-                    case 4 :
+            //             break;
+            //         case 4 :
                         
-                        break;
-                    case 5 :
+            //             break;
+            //         case 5 :
                         
-                        break;
-                    case 6 :
+            //             break;
+            //         case 6 :
                         
-                        break;
+            //             break;
 
-                }
+            //     }
 
-            } while (Escolha != 0);
+            // } while (Escolha != 0);
         }
     }
 }
