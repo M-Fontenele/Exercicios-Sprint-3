@@ -1,0 +1,11 @@
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Desafios\Desafio24\obj\Debug\netcoreapp2.2\Desafio24.csprojAssemblyReference.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Desafios\Desafio24\obj\Debug\netcoreapp2.2\Desafio24.csproj.CoreCompileInputs.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Desafios\Desafio24\obj\Debug\netcoreapp2.2\Desafio24.AssemblyInfoInputs.cache
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Desafios\Desafio24\obj\Debug\netcoreapp2.2\Desafio24.AssemblyInfo.cs
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Desafios\Desafio24\bin\Debug\netcoreapp2.2\Desafio24.deps.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Desafios\Desafio24\bin\Debug\netcoreapp2.2\Desafio24.runtimeconfig.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Desafios\Desafio24\bin\Debug\netcoreapp2.2\Desafio24.runtimeconfig.dev.json
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Desafios\Desafio24\bin\Debug\netcoreapp2.2\Desafio24.dll
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Desafios\Desafio24\bin\Debug\netcoreapp2.2\Desafio24.pdb
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Desafios\Desafio24\obj\Debug\netcoreapp2.2\Desafio24.dll
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\Desafios\Desafio24\obj\Debug\netcoreapp2.2\Desafio24.pdb
