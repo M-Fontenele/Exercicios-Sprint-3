@@ -27,7 +27,14 @@ namespace Desafio13
             int[] vetor = new int[3];
 
             if(verificacaomenor < valor1 && valor1 < verificacaomaior){
-                System.Console.WriteLine($"os valores formam um triângulo.");
+                System.Console.Write($"os valores formam um triângulo ");
+                if(valor1 == valor2 && valor1 == valor3){
+                    System.Console.WriteLine("equilátero");
+                } else if (valor1 == valor2 || valor1 == valor3 || valor2 == valor3){
+                    System.Console.WriteLine("isósceles");
+                } else {
+                    System.Console.WriteLine("escaleno");
+                }
             }
             else
             {
