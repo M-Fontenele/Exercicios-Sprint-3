@@ -68,9 +68,12 @@ namespace Desafio27
                         Console.Clear();
                         System.Console.Write("Person's name: ");
                         string nome = Console.ReadLine();
-                        System.Console.WriteLine("");
+                        System.Console.Write("Birthday");
                         string day = Console.ReadLine();
-                        System.Console.WriteLine();
+                        System.Console.Write("Month of birth: ");
+                        string month = Console.ReadLine();
+                        System.Console.Write("Year of birth: ");
+                        string Year = Console.ReadLine();
                         break;
                 }
 
