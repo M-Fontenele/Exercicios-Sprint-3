@@ -14,7 +14,7 @@ namespace Desafio27
         static void Main(string[] args)
         {
             Console.Clear();
-            Dictionary<string,string> agenda = new Dictionary<string,string>();
+            List<string> agenda = new List<string>();
             string[] listaMenu = Enum.GetNames(typeof(MenuEnum));
 
             List<string> opcoesMenu = new List<string>(){
@@ -28,6 +28,7 @@ namespace Desafio27
             int opcaoSelecionada = 0;
 
             do{
+                #region Menu Principal
                 bool escolhido = false;
 
                 do{
@@ -62,6 +63,7 @@ namespace Desafio27
                     
 
                 } while (!escolhido);
+                #endregion
 
                 switch (opcaoSelecionada){
                     case 0 :
@@ -73,7 +75,29 @@ namespace Desafio27
                         System.Console.Write("Month of birth: ");
                         string month = Console.ReadLine();
                         System.Console.Write("Year of birth: ");
-                        string Year = Console.ReadLine();
+                        string year = Console.ReadLine();
+
+                        string nascimento = day + "/" + month + "/" + year + "              " + nome;
+
+                        agenda.Add(nascimento);
+                        break;
+                    case 1 :
+                        Console.Clear();
+                        
+                        break;
+                    case 2 :
+                        Console.Clear();
+                        System.Console.WriteLine("Date        List");
+                        System.Console.WriteLine();
+                        foreach(string i in agenda){
+                            System.Console.WriteLine(i);
+                        }
+
+                            Console.ReadLine();
+                        break;
+                    case 3 :
+                        Console.Clear();
+                            querSair = true;
                         break;
                 }
 
