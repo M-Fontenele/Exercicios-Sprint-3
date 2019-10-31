@@ -78,11 +78,47 @@ namespace Desafio27
                         string year = Console.ReadLine();
 
                         string nascimento = day + "/" + month + "/" + year + "              " + nome;
+                        
 
                         agenda.Add(nascimento);
                         break;
                     case 1 :
-                        Console.Clear();
+                        bool escolhaExcluir = false;
+                        int opcaoSelecionadaAgenda = 0;
+                        do{
+                            Console.Clear();
+                            System.Console.WriteLine("Select what you want to delete");
+                            System.Console.WriteLine();
+                            System.Console.WriteLine("Date        List");
+                            System.Console.WriteLine();
+                            for(int i = 0 ; i < agenda.Count ; i++){
+                                if(opcaoSelecionadaAgenda == i){
+                                    Console.BackgroundColor = ConsoleColor.DarkBlue;
+                                    System.Console.WriteLine(agenda[opcaoSelecionadaAgenda]);
+                                    Console.ResetColor();
+                                }
+                                else{
+                                    System.Console.WriteLine(agenda[i]);
+                                }
+                            }
+
+                            var key = Console.ReadKey().Key;
+
+                            switch (key){
+                                case ConsoleKey.UpArrow :
+                                    opcaoSelecionadaAgenda = opcaoSelecionadaAgenda == 0 ? opcaoSelecionadaAgenda : --opcaoSelecionadaAgenda;
+                                    break;
+                                case ConsoleKey.DownArrow :
+                                    opcaoSelecionadaAgenda = opcaoSelecionadaAgenda == agenda.Count - 1 ? opcaoSelecionadaAgenda : ++opcaoSelecionadaAgenda;
+                                    break;
+                                case ConsoleKey.Enter :
+                                    escolhaExcluir = true;
+                                    break;
+                            }
+                        } while (!escolhaExcluir);
+
+                        agenda.Remove(agenda[opcaoSelecionadaAgenda]);
+
                         
                         break;
                     case 2 :
