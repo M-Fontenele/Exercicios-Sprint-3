@@ -2,9 +2,9 @@ using ZooLogico.Interface;
 
 namespace ZooLogico.Models
 {
-    public class Chimpanze : Animais, ICasaEmArvore
+    public class Chimpanze : Animal, IArboricula
     {
-        public string JaulaCasaEmArvore()
+        public string EscalarArvores()
         {
             return this.GetType().Name;
         }

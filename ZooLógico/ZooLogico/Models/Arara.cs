@@ -2,9 +2,9 @@ using ZooLogico.Interface;
 
 namespace ZooLogico.Models
 {
-    public class Arara : Animais, IGaiola
+    public class Arara : Animal , IVoador
     {
-        public string JaulaGaiola()
+        public string Voar()
         {
             return this.GetType().Name;
         }

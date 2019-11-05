@@ -2,9 +2,9 @@ using ZooLogico.Interface;
 
 namespace ZooLogico.Models
 {
-    public class Orangotango : Animais, ICasaEmArvore
+    public class Orangotango : Animal, IArboricula
     {
-        public string JaulaCasaEmArvore()
+        public string EscalarArvores()
         {
             return this.GetType().Name;
         }

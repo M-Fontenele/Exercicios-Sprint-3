@@ -2,9 +2,9 @@ using ZooLogico.Interface;
 
 namespace ZooLogico.Models
 {
-    public class Golfinho : Animais, IAquario
+    public class Golfinho : Animal , IAquatico
     {
-        public string JaulaAquario()
+        public string Nadar()
         {
             return this.GetType().Name;
         }

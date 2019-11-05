@@ -2,9 +2,9 @@ using ZooLogico.Interface;
 
 namespace ZooLogico.Models
 {
-    public class Leao : Animais, IPasto
+    public class Leao : Animal, ITerrestre
     {
-        public string JaulaPasto()
+        public string Andar()
         {
             return this.GetType().Name;
         }

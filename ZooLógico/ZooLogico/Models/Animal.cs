@@ -1,6 +1,6 @@
 namespace ZooLogico.Models
 {
-    public class Animais
+    public class Animal
     {
         
     }
