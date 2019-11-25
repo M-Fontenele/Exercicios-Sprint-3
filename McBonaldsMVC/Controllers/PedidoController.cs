@@ -7,8 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace McBonaldsMVC.Controllers
 {
-    public class PedidoController : Controller
+    public class PedidoController : AbstractController
     {
+        ClienteRepository clienteRepository = new ClienteRepository();
         PedidoRepository pedidoRepository = new PedidoRepository();
         HamburguerRepository hamburguerRepository = new HamburguerRepository();
         ShakeRepository shakeRepository = new ShakeRepository();
@@ -18,6 +19,23 @@ namespace McBonaldsMVC.Controllers
             PedidoViewModel pvm = new PedidoViewModel();
             pvm.Hamburgueres = hamburguerRepository.ObterTodos();
             pvm.Shakes = shakeRepository.ObterTodos();
+
+            var usuarioLogado = ObterUsuarioSession();
+            var nomeUsuarioLogado = ObterUsuarioNomeSession();
+            if(!string.IsNullOrEmpty(nomeUsuarioLogado))
+            {
+                pvm.NomeUsuario = nomeUsuarioLogado;
+            }
+
+            var clienteLogado = clienteRepository.ObterPor(usuarioLogado);
+            if(clienteLogado != null)
+            {
+                pvm.Cliente = clienteLogado;
+            }
+
+            pvm.NomeView = "Pedido";
+            pvm.UsuarioEmail = ObterUsuarioSession();
+            pvm.UsuarioNome = ObterUsuarioNomeSession();
             
             return View(pvm);
 

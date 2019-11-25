@@ -56,8 +56,8 @@ namespace McBonaldsMVC.Repositories
                 pedido.Hamburguer.Preco = double.Parse(ExtrairValorDoCampo("hamburguer_preco", linha));
                 pedido.Shake.Nome = ExtrairValorDoCampo("shake_nome", linha);
                 pedido.Shake.Preco = double.Parse(ExtrairValorDoCampo("shake_preco", linha));
-                pedido.PrecoTotal = double.Parse(ExtrairValorDoCampo("preco_total", linha));
                 pedido.DataDoPedido = DateTime.Parse(ExtrairValorDoCampo("data_pedido", linha));
+                pedido.PrecoTotal = double.Parse(ExtrairValorDoCampo("preco_total", linha));
 
                 pedidos.Add(pedido);
             }
