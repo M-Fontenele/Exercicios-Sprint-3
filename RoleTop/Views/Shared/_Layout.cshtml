@@ -1,0 +1,102 @@
+﻿@{
+    var nomeView = (string) ViewData["NomeView"];
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rolêtop</title>
+
+    @if(!"Home".Equals(nomeView))
+    {
+        <link rel="stylesheet" href="~/css/estilotodos.css" >
+    }
+    @if("Cadastro".Equals(nomeView)){
+        <link rel="stylesheet" href="~/css/login.css">
+    }
+    @if("Cliente".Equals(nomeView)){
+        <link rel="stylesheet" href="~/css/login.css">
+    }
+    @if("OutrosEventos".Equals(nomeView)){
+        <link rel="stylesheet" href="~/css/estilo-galeria.css">
+    }
+    @if("Formatura".Equals(nomeView)){
+        <link rel="stylesheet" href="~/css/estilo-galeria.css">
+    }
+    @if("Salao".Equals(nomeView)){
+        <link rel="stylesheet" href="~/css/estilo-galeria.css">
+    }
+    @if("Balada".Equals(nomeView)){
+        <link rel="stylesheet" href="~/css/estilo-galeria.css">
+    }
+    @if("Casamento".Equals(nomeView)){
+        <link rel="stylesheet" href="~/css/estilo-galeria.css">
+    }
+    @if("Galeria".Equals(nomeView)){
+        <link rel="stylesheet" href="~/css/estilo-galeria.css">
+    }
+    @if("Agenda".Equals(nomeView)){
+        <link rel="stylesheet" href="~/css/estilo-agende.css">
+    }
+    @if("AFaq".Equals(nomeView)){
+        <link rel="stylesheet" href="~/css/estilo-faq.css" >
+    }
+    @if("Home".Equals(nomeView))
+    {
+        <link rel="stylesheet" href="~/css/estilo.css" >
+    }
+    <link rel="stylesheet" href="~/css/nav.css">
+    <link rel="stylesheet" href="~/css/footer.css">
+    
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+    
+</head>
+<body>
+    <header>
+    <div id="top">
+            <div id="menu-r" class="normal"><input type="checkbox" id="bt-menu">
+            <label for="bt-menu" class="icon-m">&#9776</label></div>
+            <div id="imglogo"><img src="~/img/logo-1-peq.png" width="130em" id="logo"/></div>
+            <div id="login" class="normal"><a asp-controller="Cliente" asp-action="Login" class="cor-lm">Login</a></div>
+        </div>        
+    <nav id="menu">
+        <ul>
+            <li class="normal"><a asp-controller="Home" asp-action="Index" class="cor-lm">Home</a></li>
+            <li class="normal"><a asp-controller="AFaq" asp-action="Faq" class="cor-lm">FAQ</a></li>
+            <li><div class="parte"></div><div class="parte1"></div></li>
+            <li class="normal"><a asp-controller="Agenda" asp-action="Agendar" class="cor-lm">Agende já</a></li>
+            <li class="normal"><a asp-controller="Galeria" asp-action="Plantas" class="cor-lm">Galeria</a></li>
+        </ul>
+    </nav>
+    
+    </header>
+
+    <div id="divisao"></div>
+    <div id="divisao-1"></div>
+
+            @RenderBody()
+
+<footer>
+
+        <div id="icon-tel">
+            <i class="fas fa-phone-square-alt fa-3x"></i>
+            <p class="rodape-text">XX XXXX-XXXX</p>
+        </div>
+
+        <div id="icon-email">
+            <i class="far fa-envelope fa-3x"></i>
+            <p class="rodape-text">XXXXXXXXXX@hotmail.com</p>
+        </div>
+
+        <div id="icon-face">
+            <i class="fab fa-facebook-square fa-3x"></i>
+            <p class="rodape-text">Visite nossa pagina</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
