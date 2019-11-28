@@ -2966,6 +2966,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\McBonaldsMVC\\Views\\Administrador\\Dashboard.cshtml",
+      "TargetPath": "Views\\Administrador\\Dashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\McBonaldsMVC\\Views\\Pedido\\Index.cshtml",
       "TargetPath": "Views\\Pedido\\Index.cshtml",
       "FileKind": "mvc"
@@ -2988,11 +2993,6 @@
     {
       "FilePath": "c:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\McBonaldsMVC\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\McBonaldsMVC\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
