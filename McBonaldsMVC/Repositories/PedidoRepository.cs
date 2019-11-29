@@ -19,7 +19,7 @@ namespace McBonaldsMVC.Repositories
 
         public bool Inserir(Pedido pedido)
         {
-            var quantidadePedidos = File.ReadAllBytes(PATH).Length;
+            var quantidadePedidos = File.ReadAllLines(PATH).Length;
             pedido.Id = (ulong)++quantidadePedidos;
             var linha = new string[] {PrepararPedidosCSV(pedido)};
             File.AppendAllLines(PATH, linha); //TODO: AppendAllLines Serve para escrever um texto abaixo to que ja existe em determinado arquivo
@@ -66,6 +66,46 @@ namespace McBonaldsMVC.Repositories
                 pedidos.Add(pedido);
             }
             return pedidos;
+        }
+
+        public Pedido ObterPor(ulong id){
+            var pedidosTotais = ObterTodos();
+            foreach (var pedido in pedidosTotais)
+            {
+                if(id.Equals(pedido.Id))
+                {
+                    return pedido;
+                }
+            }
+            return null;
+        }
+
+        public bool Atualizar (Pedido pedido)
+        {
+            var pedidosTotais = File.ReadAllLines(PATH);
+            var pedidoCSV = PrepararPedidosCSV(pedido);
+            var linhaPedido = -1;
+            var resultado = false;
+
+            for (int i = 0; i < pedidosTotais.Length; i++)
+            {
+                var idConvetido = ulong.Parse(ExtrairValorDoCampo("id", pedidosTotais[i]));
+                    if(pedido.Id.Equals(idConvetido))
+                    {
+                        linhaPedido = i;
+                        resultado = true;
+                        break;
+                    }
+            }
+
+            if(resultado)
+            {
+                pedidosTotais[linhaPedido] = pedidoCSV;
+                File.WriteAllLines(PATH,pedidosTotais);
+            }
+
+            return resultado;
+
         }
 
         private string PrepararPedidosCSV(Pedido pedido)

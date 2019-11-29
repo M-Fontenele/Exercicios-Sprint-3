@@ -1,1 +1,2 @@
-nome=Pessoa;email=Pessoa@hotmail.com;senha=pessoa;endereco=Algum Lugar; telefone=11111111111;data_nascimento=13/11/2019 00:00:00 
+tipo_usuario=0;nome=Administrador;email=Admin@hotmail.com;senha=admin;endereco=;telefone=;data_nascimento=13/11/2019 00:00:00 
+tipo_usuario=1;nome=Pessoa;email=Pessoa@hotmail.com;senha=pessoa;endereco=Algum Lugar;telefone=11111111111;data_nascimento=13/11/2019 00:00:00 
