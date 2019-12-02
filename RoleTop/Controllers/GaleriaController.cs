@@ -1,40 +1,65 @@
 using Microsoft.AspNetCore.Mvc;
+using RoleTop.ViewModels;
 
 namespace RoleTop.Controllers
 {
-    public class GaleriaController : Controller
+    public class GaleriaController : AbstractController
     {
         public IActionResult Plantas()
         {
-            ViewData["NomeView"] = "Galeria";
-            return View();
+            return View(new BaseViewModel()
+            {
+                NomeView = "Plantas",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
         }
 
         public IActionResult Salao()
         {
-            ViewData["NomeView"] = "Salao";
-            return View();
+            return View(new BaseViewModel()
+            {
+                NomeView = "Salao",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
         }
         
         public IActionResult Casamento()
         {
-            ViewData["NomeView"] = "Casamento";
-            return View();
+            return View(new BaseViewModel()
+            {
+                NomeView = "Casamento",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
         }
         public IActionResult Balada()
         {
-            ViewData["NomeView"] = "Balada";
-            return View();
+            return View(new BaseViewModel()
+            {
+                NomeView = "Balada",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
         }
         public IActionResult Formatura()
         {
-            ViewData["NomeView"] = "Formatura";
-            return View();
+            return View(new BaseViewModel()
+            {
+                NomeView = "Formatura",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
         }
         public IActionResult OutrosEventos()
         {
-            ViewData["NomeView"] = "OutrosEventos";
-            return View();
+            return View(new BaseViewModel()
+            {
+                NomeView = "OutrosEventos",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
         }
     }
 }

@@ -9,6 +9,7 @@ namespace RoleTop.Models
         public string CPF {get;set;}
         public DateTime DataNascimento {get;set;}
         public string Telefone {get;set;}
+        public uint TipoUsuario {get;set;}
 
         public Cliente()
         {

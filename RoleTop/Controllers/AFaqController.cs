@@ -1,13 +1,18 @@
 using Microsoft.AspNetCore.Mvc;
+using RoleTop.ViewModels;
 
 namespace RoleTop.Controllers
 {
-    public class AFaqController : Controller
+    public class AFaqController : AbstractController
     {
         public IActionResult Faq()
         {
-            ViewData["NomeView"] = "AFaq";
-            return View();
+            return View(new BaseViewModel()
+            {
+                NomeView = "AFaq",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
         }
     }
 }

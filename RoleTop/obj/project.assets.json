@@ -12083,11 +12083,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\47736940843\\Desktop\\Nova pasta (2)\\RoleTop\\RoleTop.csproj",
+      "projectUniqueName": "C:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\RoleTop\\RoleTop.csproj",
       "projectName": "RoleTop",
-      "projectPath": "C:\\Users\\47736940843\\Desktop\\Nova pasta (2)\\RoleTop\\RoleTop.csproj",
+      "projectPath": "C:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\RoleTop\\RoleTop.csproj",
       "packagesPath": "C:\\Users\\47736940843\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\47736940843\\Desktop\\Nova pasta (2)\\RoleTop\\obj\\",
+      "outputPath": "C:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\RoleTop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

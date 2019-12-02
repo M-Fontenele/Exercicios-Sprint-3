@@ -1,6 +1,4 @@
-﻿@{
-    var nomeView = (string) ViewData["NomeView"];
-}
+﻿@model RoleTop.ViewModels.BaseViewModel;
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -10,41 +8,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rolêtop</title>
 
-    @if(!"Home".Equals(nomeView))
+    @if(!"Home".Equals(@Model.NomeView))
     {
         <link rel="stylesheet" href="~/css/estilotodos.css" >
     }
-    @if("Cadastro".Equals(nomeView)){
+    @if("Cadastro".Equals(@Model.NomeView)){
         <link rel="stylesheet" href="~/css/login.css">
     }
-    @if("Cliente".Equals(nomeView)){
+    @if("Login".Equals(@Model.NomeView)){
         <link rel="stylesheet" href="~/css/login.css">
     }
-    @if("OutrosEventos".Equals(nomeView)){
+    @if("OutrosEventos".Equals(@Model.NomeView)){
         <link rel="stylesheet" href="~/css/estilo-galeria.css">
     }
-    @if("Formatura".Equals(nomeView)){
+    @if("Formatura".Equals(@Model.NomeView)){
         <link rel="stylesheet" href="~/css/estilo-galeria.css">
     }
-    @if("Salao".Equals(nomeView)){
+    @if("Salao".Equals(@Model.NomeView)){
         <link rel="stylesheet" href="~/css/estilo-galeria.css">
     }
-    @if("Balada".Equals(nomeView)){
+    @if("Balada".Equals(@Model.NomeView)){
         <link rel="stylesheet" href="~/css/estilo-galeria.css">
     }
-    @if("Casamento".Equals(nomeView)){
+    @if("Casamento".Equals(@Model.NomeView)){
         <link rel="stylesheet" href="~/css/estilo-galeria.css">
     }
-    @if("Galeria".Equals(nomeView)){
+    @if("Plantas".Equals(@Model.NomeView)){
         <link rel="stylesheet" href="~/css/estilo-galeria.css">
     }
-    @if("Agenda".Equals(nomeView)){
+    @if("Agenda".Equals(@Model.NomeView)){
         <link rel="stylesheet" href="~/css/estilo-agende.css">
     }
-    @if("AFaq".Equals(nomeView)){
+    @if("AFaq".Equals(@Model.NomeView)){
         <link rel="stylesheet" href="~/css/estilo-faq.css" >
     }
-    @if("Home".Equals(nomeView))
+    @if("Home".Equals(@Model.NomeView))
     {
         <link rel="stylesheet" href="~/css/estilo.css" >
     }

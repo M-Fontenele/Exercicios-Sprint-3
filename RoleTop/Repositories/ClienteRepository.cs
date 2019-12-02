@@ -6,7 +6,7 @@ namespace RoleTop.Repositories
 {
     public class ClienteRepository : RepositoryBase
     {
-        private const string PATH = "Database/Cliente.scv";
+        private const string PATH = "Database/Cliente.csv";
 
         public ClienteRepository()
         {
@@ -32,6 +32,7 @@ namespace RoleTop.Repositories
                 if(ExtrairValorDoCampo("email", item).Equals(email))
                 {
                     Cliente c = new Cliente();
+                    c.TipoUsuario = uint.Parse(ExtrairValorDoCampo("tipo_usuario", item));
                     c.Nome = ExtrairValorDoCampo("nome",item);
                     c.Email = ExtrairValorDoCampo("email",item);
                     c.DataNascimento = DateTime.Parse(ExtrairValorDoCampo("data_nascimento",item));
@@ -47,7 +48,7 @@ namespace RoleTop.Repositories
 
         private string PrepararRegistroCSV(Cliente cliente)
         {
-            return $"nome={cliente.Nome};senha={cliente.Senha};email={cliente.Email};cpf={cliente.CPF};data_nascimento={cliente.DataNascimento};telefone={cliente.Telefone}";
+            return $"tipo_ususario={cliente.TipoUsuario};nome={cliente.Nome};senha={cliente.Senha};email={cliente.Email};cpf={cliente.CPF};data_nascimento={cliente.DataNascimento};telefone={cliente.Telefone}";
         }
     }
 }

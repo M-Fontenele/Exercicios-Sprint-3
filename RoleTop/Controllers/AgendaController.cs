@@ -1,13 +1,18 @@
 using Microsoft.AspNetCore.Mvc;
+using RoleTop.ViewModels;
 
 namespace RoleTop.Controllers
 {
-    public class AgendaController : Controller
+    public class AgendaController : AbstractController
     {
         public IActionResult Agendar()
         {
-            ViewData["NomeView"] = "Agenda";
-            return View();
+            return View(new BaseViewModel()
+            {
+                NomeView = "Agenda",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
         }
     }
 }
