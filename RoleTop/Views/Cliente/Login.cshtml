@@ -1,6 +1,6 @@
 <main>
         <section id="meio">
-                <form method="POST" action="usuario.html">
+                <form method="POST" action='@Url.Action("Login","Cliente")'>
 
                     <div>
 
@@ -9,13 +9,13 @@
                         <div class="informacao">
 
                             <label for="email-login">E-mail</label>
-                            <input id="email-login" type="email" maxlength="50" required>
+                            <input id="email-login" type="email" name="email" maxlength="50" required>
 
                         </div>
                         <div class="informacao">
 
                             <label for="senha">Senha</label>
-                            <input id="senha" type="password" required>
+                            <input id="senha" type="password" name="senha" required>
 
                         </div>
                         <a asp-controller="Cadastro" asp-action="Index" >Não tem uma conta? Cadastre-se</a>

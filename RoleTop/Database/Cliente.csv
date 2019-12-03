@@ -1,3 +1,1 @@
-tipo_ususario=0;nome=Pessoa;senha=pessoa;email=Pessoa@hotmail.com;cpf=11122233344;data_nascimento=01/10/2019 00:00:00;telefone=11233334444
-tipo_ususario=0;nome=Pessoa;senha=jhgj;email=dkslamdlasds@hotmail;cpf=ghkghk;data_nascimento=03/10/2019 00:00:00;telefone=11111111111
-tipo_ususario=0;nome=Pessoa;senha=adsa;email=Admin@hotmail.com;cpf=asfas;data_nascimento=02/10/2019 00:00:00;telefone=fasfassaf
+tipo_usuario=0;nome=Pessoa;senha=p;email=Pessoa@hotmail.com;cpf=12345678912;data_nascimento=01/10/2019 00:00:00;telefone=11111111111

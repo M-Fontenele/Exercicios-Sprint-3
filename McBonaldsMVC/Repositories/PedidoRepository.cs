@@ -38,7 +38,7 @@ namespace McBonaldsMVC.Repositories
                     pedidosCliente.Add(pedido);
                 }
             }
-            return pedidos;
+            return pedidosCliente;
         }
 
         public List<Pedido> ObterTodos()

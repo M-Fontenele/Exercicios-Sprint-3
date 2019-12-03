@@ -23,6 +23,7 @@ namespace RoleTop.Controllers
             });
         }
 
+
         [HttpPost]
         public IActionResult Login(IFormCollection form)
         {
@@ -49,7 +50,7 @@ namespace RoleTop.Controllers
                                 HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario);
                                 HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
                                 HttpContext.Session.SetString(SESSION_CLIENTE_TIPO, cliente.TipoUsuario.ToString());
-                                return RedirectToAction("Index","Home");
+                                return RedirectToAction("MeusEventos","Cliente");
                             default:
                                 HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario);
                                 HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
@@ -59,7 +60,7 @@ namespace RoleTop.Controllers
                     }
                     else
                     {
-                        return View("Erro", new RespostaViewModel("Senha incorreto"));
+                        return View("Erro", new RespostaViewModel("Senha incorreta"));
                     }
                 }
                 else
@@ -70,8 +71,29 @@ namespace RoleTop.Controllers
             catch (Exception e)
             {
                 System.Console.WriteLine(e.StackTrace);
-                return View("Erro");
+                return View("Erro", new RespostaViewModel());
             }
+        }
+        public IActionResult MeusEventos()
+        {
+            var emailCliente = HttpContext.Session.GetString(SESSION_CLIENTE_EMAIL);
+            var agendaCliente = AgendaRepository.ObterTodosPorCliente(emailCliente);
+            return View(new MeusEventosViewModel()
+            {
+                Agendar = agendaCliente,
+                NomeView = "MeusEventos",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
+        }
+
+        public IActionResult Logoff()
+        {
+            HttpContext.Session.Remove(SESSION_CLIENTE_EMAIL);
+            HttpContext.Session.Remove(SESSION_CLIENTE_NOME);
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index", "Home");
+
         }
     }
 }

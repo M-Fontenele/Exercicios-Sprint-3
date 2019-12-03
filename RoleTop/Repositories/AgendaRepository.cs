@@ -1,3 +1,4 @@
+using System.Reflection.PortableExecutable;
 using System.Collections.Generic;
 using System.IO;
 using RoleTop.Models;
@@ -26,6 +27,17 @@ namespace RoleTop.Repositories
             return true;
         }
 
+        public List<Agendar> ObterTodosPorCliente(string emailCliente)
+        {
+            var agendar = ObterTodos();
+            List<Agendar> agendarCliente = new List<Agendar>();
+            foreach (var agenda in agendar)
+            {
+                agendarCliente.Add(agenda);
+            }
+            return agendarCliente;
+        }
+
         public List<Agendar> ObterTodos()
         {
             var linhas = File.ReadAllLines(PATH);
@@ -43,6 +55,44 @@ namespace RoleTop.Repositories
                 agendar.Add(agenda);
             }
             return agendar;
+        }
+
+        public Agendar ObterPor(ulong id)
+        {
+            var agendasTotais = ObterTodos();
+            foreach (var agenda in agendasTotais)
+            {
+                if(id.Equals(agenda.Id))
+                {
+                    return agenda;
+                }
+            }
+            return null;
+        }
+
+        public bool Atualizar (Agendar agendar)
+        {
+            var agendasTotais = File.ReadAllLines(PATH);
+            var agendaCSV = PrepararAgendaCSV(agendar);
+            var linhaPedido = -1;
+            var resultado = false;
+            for (int i = 0; i < agendasTotais.Length; i++)
+            {
+                var idConvertido = ulong.Parse(ExtrairValorDoCampo("id", agendasTotais[i]));
+                if(agendar.Id.Equals(idConvertido))
+                {
+                    linhaPedido = i;
+                    resultado = true;
+                    break;
+                }
+            }
+
+            if(resultado)
+            {
+                agendasTotais[linhaPedido] = agendaCSV;
+                File.WriteAllLines(PATH,agendasTotais);
+            }
+            return resultado;
         }
 
         private string PrepararAgendaCSV(Agendar agendar)

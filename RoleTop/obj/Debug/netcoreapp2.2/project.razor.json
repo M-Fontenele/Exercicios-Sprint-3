@@ -2991,6 +2991,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\RoleTop\\Views\\Cliente\\MeusEventos.cshtml",
+      "TargetPath": "Views\\Cliente\\MeusEventos.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\RoleTop\\Views\\Agenda\\Agendar.cshtml",
       "TargetPath": "Views\\Agenda\\Agendar.cshtml",
       "FileKind": "mvc"
@@ -3033,11 +3038,6 @@
     {
       "FilePath": "c:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\RoleTop\\Views\\Cliente\\Login.cshtml",
       "TargetPath": "Views\\Cliente\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\RoleTop\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
