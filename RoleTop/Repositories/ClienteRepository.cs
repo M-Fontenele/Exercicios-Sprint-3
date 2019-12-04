@@ -24,6 +24,30 @@ namespace RoleTop.Repositories
             return true;
         }
 
+        public bool Atualizar(Cliente c, string email)
+        {
+            var clienteTotais = File.ReadAllLines(PATH);
+            var clienteCSV = PrepararRegistroCSV(c);
+            var linhaPedido = -1;
+            var resultado = false;
+
+            for (int i = 0; i < clienteTotais.Length ; i++)
+            {
+                var emailConvertido = ulong.Parse(ExtrairValorDoCampo("email", clienteTotais[i]));
+                if(email.Equals(emailConvertido))
+                {
+                    linhaPedido = i;
+                    resultado = true;
+                    break;
+                }
+            }
+            if(resultado)
+            {
+                clienteTotais[linhaPedido] = clienteCSV;
+                File.WriteAllLines(PATH,clienteTotais);
+            }
+            return resultado;
+        }
         public Cliente ObterPor(string email)
         {
             var linhas = File.ReadAllLines(PATH);

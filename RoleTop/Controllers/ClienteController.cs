@@ -2,6 +2,7 @@ using System;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RoleTop.Enums;
+using RoleTop.Models;
 using RoleTop.Repositories;
 using RoleTop.ViewModels;
 
@@ -86,6 +87,57 @@ namespace RoleTop.Controllers
                 UsuarioNome = ObterUsuarioNomeSession()
             });
         }
+
+        public IActionResult AlterarInformacoes(IFormCollection form)
+        {
+            var clienteO = clienteRepository.ObterPor(ObterUsuarioSession());
+            Cliente c = new Cliente();
+            c.TipoUsuario = (uint) TiposUsuario.CLIENTE;
+            c.Nome = form["nome"];
+            c.Email =  form["email"];
+            c.Senha = clienteO.Senha;
+            c.Telefone = form["telefone"];
+            c.DataNascimento = DateTime.Parse(form["dataNascimento"]);
+            c.CPF = form["cpf"];
+            if(clienteRepository.Atualizar(c,ObterUsuarioSession()))
+            {
+                HttpContext.Session.Remove(SESSION_CLIENTE_EMAIL);
+                HttpContext.Session.Remove(SESSION_CLIENTE_NOME);
+
+                HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, c.Email);
+                HttpContext.Session.SetString(SESSION_CLIENTE_NOME, c.Nome);
+            }
+            return View("Sucesso", new RespostaViewModel()
+            {
+                NomeView = "InfoUsuario",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
+        }
+        public IActionResult InfoUsuario()
+        {
+            var c = clienteRepository.ObterPor(ObterUsuarioSession());
+            return View(new BaseViewModel()
+            {
+                Cliente = c,
+                NomeView = "InfoUsuario",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
+        }
+        public IActionResult MudarInformacao()
+        {
+            var c = clienteRepository.ObterPor(ObterUsuarioSession());
+            return View(new BaseViewModel()
+            {
+                Cliente = c,
+                NomeView = "InfoUsuario",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
+        }
+
+
 
         public IActionResult Logoff()
         {

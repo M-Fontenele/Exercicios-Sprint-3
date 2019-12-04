@@ -1,7 +1,7 @@
 <main>
     <section id="mini-menu">
-                    <div class="info-b-1"><a href="info-usuario.html" class="info-b">Informações do usuário</a></div>   
-                    <div><a href="meus-eventos.html" class="info-a">Meus eventos</a></div>     
+                    <div class="info-b-1"><a asp-controller="Cliente" asp-action="InfoUsuario" class="info-b">Informações do usuário</a></div>   
+                    <div><a asp-controller="Cliente" asp-action="MeusEventos" class="info-a">Meus eventos</a></div>     
                 </section>
 
                 <section id="pedidos-table">
@@ -47,7 +47,7 @@
                         
                         </tbody>
                     </table>
-                    <div id="botao-agende"><a href="agende.html">Agende já</a></div>
+                    <div id="botao-agende"><a asp-controller="Agenda" asp-action="Agendar">Agende já</a></div>
                 </section>
                 <br>
                 <br>

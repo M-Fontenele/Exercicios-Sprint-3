@@ -82,3 +82,5 @@ C:\Users\47736940843\Documents\Exercicios-Sprint-3\RoleTop\obj\Debug\netcoreapp2
 C:\Users\47736940843\Documents\Exercicios-Sprint-3\RoleTop\obj\Debug\netcoreapp2.2\RoleTop.Views.pdb
 C:\Users\47736940843\Documents\Exercicios-Sprint-3\RoleTop\obj\Debug\netcoreapp2.2\RoleTop.csproj.CopyComplete
 C:\Users\47736940843\Documents\Exercicios-Sprint-3\RoleTop\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\MeusEventos.g.cshtml.cs
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\RoleTop\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\InfoUsuario.g.cshtml.cs
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\RoleTop\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\MudarInformacao.g.cshtml.cs

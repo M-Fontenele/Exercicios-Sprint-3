@@ -2986,6 +2986,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\RoleTop\\Views\\Cliente\\MudarInformacao.cshtml",
+      "TargetPath": "Views\\Cliente\\MudarInformacao.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\RoleTop\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -3003,6 +3008,11 @@
     {
       "FilePath": "c:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\RoleTop\\Views\\AFaq\\Faq.cshtml",
       "TargetPath": "Views\\AFaq\\Faq.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\RoleTop\\Views\\Cliente\\InfoUsuario.cshtml",
+      "TargetPath": "Views\\Cliente\\InfoUsuario.cshtml",
       "FileKind": "mvc"
     },
     {

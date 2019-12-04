@@ -8,6 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rolêtop</title>
 
+    @if("InfoUsuario".Equals(@Model.NomeView)){
+        <link rel="stylesheet" href="~/css/info-usuario.css" >
+    }
     @if("MeusEventos".Equals(@Model.NomeView)){
         <link rel="stylesheet" href="~/css/meus-eventos.css" >
     }
@@ -61,7 +64,12 @@
             <div id="menu-r" class="normal"><input type="checkbox" id="bt-menu">
             <label for="bt-menu" class="icon-m">&#9776</label></div>
             <div id="imglogo"><img src="~/img/logo-1-peq.png" width="130em" id="logo"/></div>
+            @if(string.IsNullOrEmpty(@Model.UsuarioEmail)){
             <div id="login" class="normal"><a asp-controller="Cliente" asp-action="Login" class="cor-lm">Login</a></div>
+            }
+            else{
+                <div id="login" class="normal"><a asp-controller="Cliente" asp-action="MeusEventos" class="cor-lm">@Model.UsuarioNome</a></div>
+            }
         </div>        
     <nav id="menu">
         <ul>
