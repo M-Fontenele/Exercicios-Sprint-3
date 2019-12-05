@@ -2,6 +2,7 @@ using System.Reflection.PortableExecutable;
 using System.Collections.Generic;
 using System.IO;
 using RoleTop.Models;
+using System;
 
 namespace RoleTop.Repositories
 {
@@ -51,6 +52,15 @@ namespace RoleTop.Repositories
                 agenda.Cliente.Nome = ExtrairValorDoCampo("cliente_nome", linha);
                 agenda.Cliente.Email = ExtrairValorDoCampo("cliente_email",linha);
                 agenda.Cliente.CPF = ExtrairValorDoCampo("cliente_cpf",linha);
+                agenda.Cliente.Telefone = ExtrairValorDoCampo("cliente_telefone",linha);
+                agenda.NomeDoEvento = ExtrairValorDoCampo("nome_Evento",linha);
+                agenda.TipoDeEvento = ExtrairValorDoCampo("tipos_Eventos",linha);
+                agenda.Complemento = ExtrairValorDoCampo("outro_Tipo_De_Evento",linha);
+                agenda.PlanoEvento.Nome = ExtrairValorDoCampo("planoDeEvento",linha);
+                agenda.DiaDoEvento = DateTime.Parse(ExtrairValorDoCampo("dataEvento",linha));
+                agenda.DataDoRegistro = DateTime.Parse(ExtrairValorDoCampo("diaDoRegistro",linha));
+                agenda.DescricaoEvento = ExtrairValorDoCampo("descricao",linha);
+                agenda.PrecoTotal = double.Parse(ExtrairValorDoCampo("precoTotal",linha));
 
                 agendar.Add(agenda);
             }
@@ -100,7 +110,7 @@ namespace RoleTop.Repositories
             Cliente c = agendar.Cliente;
             PlanoEvento pe = agendar.PlanoEvento;
 
-            return $"id={agendar.Id};status_pedido={agendar.Status};cliente_nome={c.Nome};cliente_email={c.Email};cliente_cpf={c.CPF}"; 
+            return $"id={agendar.Id};status_pedido={agendar.Status};cliente_nome={c.Nome};cliente_email={c.Email};cliente_cpf={c.CPF};cliente_telefone={c.Telefone};nome_Evento={agendar.NomeDoEvento};tipos_Eventos={agendar.TipoDeEvento};outro_Tipo_De_Evento={agendar.Complemento};planoDeEvento={agendar.PlanoEvento.Nome};dataEvento={agendar.DiaDoEvento};diaDoRegistro={agendar.DataDoRegistro};descricao={agendar.DescricaoEvento};precoTotal={agendar.PrecoTotal}"; 
         }
     }
 }

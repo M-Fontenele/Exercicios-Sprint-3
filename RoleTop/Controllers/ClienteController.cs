@@ -90,6 +90,7 @@ namespace RoleTop.Controllers
 
         public IActionResult AlterarInformacoes(IFormCollection form)
         {
+            ViewData["Action"] = "Alterar Informacoes";
             var clienteO = clienteRepository.ObterPor(ObterUsuarioSession());
             Cliente c = new Cliente();
             c.TipoUsuario = (uint) TiposUsuario.CLIENTE;
@@ -106,13 +107,21 @@ namespace RoleTop.Controllers
 
                 HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, c.Email);
                 HttpContext.Session.SetString(SESSION_CLIENTE_NOME, c.Nome);
+                return View("Sucesso", new RespostaViewModel()
+                {
+                    NomeView = "InfoUsuario",
+                    UsuarioEmail = ObterUsuarioSession(),
+                    UsuarioNome = ObterUsuarioNomeSession()
+                });
             }
-            return View("Sucesso", new RespostaViewModel()
-            {
-                NomeView = "InfoUsuario",
-                UsuarioEmail = ObterUsuarioSession(),
-                UsuarioNome = ObterUsuarioNomeSession()
-            });
+            else{
+                return View("Erro", new RespostaViewModel()
+                {
+                    NomeView = "InfoUsuario",
+                    UsuarioEmail = ObterUsuarioSession(),
+                    UsuarioNome = ObterUsuarioNomeSession()
+                });
+            }
         }
         public IActionResult InfoUsuario()
         {

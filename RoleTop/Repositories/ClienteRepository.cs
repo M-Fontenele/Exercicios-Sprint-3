@@ -33,7 +33,7 @@ namespace RoleTop.Repositories
 
             for (int i = 0; i < clienteTotais.Length ; i++)
             {
-                var emailConvertido = ulong.Parse(ExtrairValorDoCampo("email", clienteTotais[i]));
+                var emailConvertido = ExtrairValorDoCampo("email", clienteTotais[i]);
                 if(email.Equals(emailConvertido))
                 {
                     linhaPedido = i;
