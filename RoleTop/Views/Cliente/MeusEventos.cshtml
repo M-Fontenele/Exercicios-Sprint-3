@@ -1,3 +1,4 @@
+@model RoleTop.ViewModels.MeusEventosViewModel
 <main>
     <section id="mini-menu">
                     <div class="info-b-1"><a asp-controller="Cliente" asp-action="InfoUsuario" class="info-b">Informações do usuário</a></div>   
@@ -20,31 +21,28 @@
 
                         </tfoot>
                         <tbody>
-                            <tr>
-                                <td>Melhor Evento de todos</td>
-                                <td>Salão Iluminação e Som</td>
-                                <td>Casamento</td>
-                                <td>30/09/2019</td>
-                                <td>Esse vai ser o melhor evento de todos os tempos </td>
-                                <td class="verde">Aceito</td>
-                            </tr>
-                            <tr>
-                                <td>Pior Evento de todos</td>
-                                <td>Salão</td>
-                                <td>Festa</td>
-                                <td>30/09/2019</td>
-                                <td>Esse vai ser um dos piores eventos do mundo</td>
-                                <td class="vermelho">Recusado</td>
-                            </tr>
-                            <tr>
-                                <td>Um evento qualquer</td>
-                                <td>Salão Iluminação e Som</td>
-                                <td>Balada</td>
-                                <td>02/10/2019</td>
-                                <td>Não vai ser dos melhores mais é bom</td>
-                                <td class="amarelo">Em analise</td>
-                            </tr>
-                        
+                            @foreach (var item in Model.Agendar)
+                            {
+                                <tr>
+                                    <td>@item.NomeDoEvento</td>
+                                    <td>@item.PlanoEvento.Nome</td>
+                                    <td>@item.TipoDeEvento</td>
+                                    <td>@item.DiaDoEvento</td>
+                                    <td>@item.DescricaoEvento</td>
+                                    @if(item.Status == 0)
+                                    {
+                                        <td class="amarelo">Pendente</td>
+                                    }
+                                    @if(item.Status == 1)
+                                    {
+                                        <td class="verde">Aceito</td>
+                                    }
+                                    @if(item.Status == 2)
+                                    {
+                                        <td class="vermelho">Recusado</td>
+                                    }
+                                </tr>
+                            }
                         </tbody>
                     </table>
                     <div id="botao-agende"><a asp-controller="Agenda" asp-action="Agendar">Agende já</a></div>

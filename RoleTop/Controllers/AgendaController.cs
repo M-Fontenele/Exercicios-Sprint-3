@@ -15,12 +15,26 @@ namespace RoleTop.Controllers
         AgendaRepository agendaRepository = new AgendaRepository();
         public IActionResult Agendar()
         {
-            return View(new BaseViewModel()
+            AgendaViewModel a = new AgendaViewModel();
+            a.PlanoEvento = planoEventoRepository.ObterTodos();
+
+            var usuarioLogado = ObterUsuarioSession();
+            var nomeUsuarioLogado = ObterUsuarioNomeSession();
+            if(!string.IsNullOrEmpty(nomeUsuarioLogado))
             {
-                NomeView = "Agenda",
-                UsuarioEmail = ObterUsuarioSession(),
-                UsuarioNome = ObterUsuarioNomeSession()
-            });
+                a.UsuarioNome = nomeUsuarioLogado;
+            }
+
+            var clienteLogado = ClienteRepository.ObterPor(usuarioLogado);
+            if(clienteLogado != null)
+            {
+                a.Cliente = clienteLogado;
+            }
+            
+            a.NomeView = "Agenda";
+            a.UsuarioEmail = ObterUsuarioSession();
+            a.UsuarioNome = ObterUsuarioNomeSession();
+            return View(a);
         }
 
         public IActionResult AgendarEvento(IFormCollection form)

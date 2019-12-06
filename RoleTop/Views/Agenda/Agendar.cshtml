@@ -1,4 +1,4 @@
-
+@model RoleTop.ViewModels.AgendaViewModel
 <main>
     <section id="meio" class="agende">
         <h2 id="titulo"><strong> Agende-já </strong></h2>
@@ -65,14 +65,14 @@
             <div class="informacao">
 
                 <label for="nome-do-usuario">Nome Completo</label>
-                <input id="nome-do-usuario" type="text" name="nome" maxlength="30" minlength="3" autofocus required>
+                <input id="nome-do-usuario" type="text" name="nome" maxlength="30" minlength="3" required value=@Model.Cliente.Nome>
             
             </div>
 
             <div class="informacao">
 
                 <label for="email">E-mail</label>
-                <input id="email" type="email" name="email" maxlength="50" required>
+                <input id="email" type="email" name="email" maxlength="50" required value=@Model.Cliente.Email>
 
             </div>
 
@@ -81,7 +81,7 @@
             <div class="informacao">
 
                 <label for="cpf">CPF</label>
-                <input id="cpf" type="text" name="cpf" maxlength="30" minlength="3" autofocus required>
+                <input id="cpf" type="text" name="cpf" maxlength="30" minlength="3" required value=@Model.Cliente.CPF>
             
             </div>
 
@@ -90,7 +90,7 @@
             <div class="informacao">
 
                 <label for="numero">Número</label>
-                <input id="numero" type="text" name="telefone" maxlength="30" minlength="3" autofocus required>
+                <input id="numero" type="text" name="telefone" maxlength="30" minlength="3" required value=@Model.Cliente.Telefone>
             
             </div>
 

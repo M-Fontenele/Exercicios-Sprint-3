@@ -8,6 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rolêtop</title>
 
+    @if("Admin".Equals(@Model.NomeView)){
+        <link rel="stylesheet" href="~/css/meus-eventos.css" >
+    }
     @if("InfoUsuario".Equals(@Model.NomeView)){
         <link rel="stylesheet" href="~/css/info-usuario.css" >
     }
