@@ -9,8 +9,9 @@ namespace RoleTop.Controllers
         {
             return View(new RespostaViewModel()
             {
+
                 NomeView = "Admin",
-                UsuarioEmail= ObterUsuarioSession(),
+                UsuarioEmail = ObterUsuarioSession(),
                 UsuarioNome = ObterUsuarioNomeSession()
             });
         }

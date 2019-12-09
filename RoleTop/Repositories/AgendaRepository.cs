@@ -34,7 +34,10 @@ namespace RoleTop.Repositories
             List<Agendar> agendarCliente = new List<Agendar>();
             foreach (var agenda in agendar)
             {
-                agendarCliente.Add(agenda);
+                if(agenda.Cliente.Email.Equals(emailCliente))
+                {
+                    agendarCliente.Add(agenda);
+                }
             }
             return agendarCliente;
         }

@@ -64,23 +64,30 @@
 <body>
     <header>
     <div id="top">
-            <div id="menu-r" class="normal"><input type="checkbox" id="bt-menu">
-            <label for="bt-menu" class="icon-m">&#9776</label></div>
+            <div id="menu-r" class="normal"><a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                    <i class="fa fa-bars"></i>
+                </a></div>
             <div id="imglogo"><img src="~/img/logo-1-peq.png" width="130em" id="logo"/></div>
             @if(string.IsNullOrEmpty(@Model.UsuarioEmail)){
             <div id="login" class="normal"><a asp-controller="Cliente" asp-action="Login" class="cor-lm">Login</a></div>
             }
             else{
-                <div id="login" class="normal"><a asp-controller="Cliente" asp-action="MeusEventos" class="cor-lm">@Model.UsuarioNome</a></div>
+                <div class="dropdown" id="usuario" class="normal"><a asp-controller="Cliente" asp-action="MeusEventos" class="cor-lm">@Model.UsuarioNome <i id="botao-logoff" class="fas fa-play"></i></a>
+                    <div class="dropdown-content">
+                        <a asp-controller="Cliente" asp-action="InfoUsuario" >Minhas Informações</a>
+                        <a asp-controller="Cliente" asp-action="MeusEventos" >Meus Eventos</a>
+                        <a asp-controller="Cliente" asp-action="Logoff" >Logout</a>
+                    </div>
+                </div>
             }
-        </div>        
+        </div>    
     <nav id="menu">
         <ul>
-            <li class="normal"><a asp-controller="Home" asp-action="Index" class="cor-lm">Home</a></li>
-            <li class="normal"><a asp-controller="AFaq" asp-action="Faq" class="cor-lm">FAQ</a></li>
+            <li class="normal"><a onclick="toggleMobileMenu()" asp-controller="Home" asp-action="Index" class="cor-lm">Home</a></li>
+            <li class="normal"><a onclick="toggleMobileMenu()" asp-controller="AFaq" asp-action="Faq" class="cor-lm">FAQ</a></li>
             <li><div class="parte"></div><div class="parte1"></div></li>
-            <li class="normal"><a asp-controller="Agenda" asp-action="Agendar" class="cor-lm">Agende já</a></li>
-            <li class="normal"><a asp-controller="Galeria" asp-action="Plantas" class="cor-lm">Galeria</a></li>
+            <li class="normal"><a onclick="toggleMobileMenu()" asp-controller="Agenda" asp-action="Agendar" class="cor-lm">Agende já</a></li>
+            <li class="normal"><a onclick="toggleMobileMenu()" asp-controller="Galeria" asp-action="Plantas" class="cor-lm">Galeria</a></li>
         </ul>
     </nav>
     
@@ -109,6 +116,36 @@
         </div>
 
     </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            var ul = document.querySelector("nav ul");
+            var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+            var icon = document.querySelector(".icon > i");
+
+            ul.classList.toggle("mobile-mode");
+
+            if (icon.classList.contains("fa-bars")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.remove("fa");
+
+                icon.classList.add("fas");
+                icon.classList.add("fa-skull");
+            } else {
+                icon.classList.remove("fas");
+                icon.classList.remove("fa-skull");
+
+                icon.classList.add("fa");
+                icon.classList.add("fa-bars");
+            }
+
+            for (var button of commonButtons) {
+                button.classList.toggle("active");
+            }
+
+        }
+        
+    </script>
 
 </body>
 </html>
