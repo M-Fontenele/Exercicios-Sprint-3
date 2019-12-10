@@ -56,7 +56,7 @@ namespace RoleTop.Controllers
                                 HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario);
                                 HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
                                 HttpContext.Session.SetString(SESSION_CLIENTE_TIPO, cliente.TipoUsuario.ToString());
-                                return RedirectToAction("Dashboard", "Administrador");
+                                return RedirectToAction("Pendentes", "Administrador");
                         }
                     }
                     else

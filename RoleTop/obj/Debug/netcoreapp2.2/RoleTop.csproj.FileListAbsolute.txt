@@ -84,4 +84,6 @@ C:\Users\47736940843\Documents\Exercicios-Sprint-3\RoleTop\obj\Debug\netcoreapp2
 C:\Users\47736940843\Documents\Exercicios-Sprint-3\RoleTop\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\MeusEventos.g.cshtml.cs
 C:\Users\47736940843\Documents\Exercicios-Sprint-3\RoleTop\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\InfoUsuario.g.cshtml.cs
 C:\Users\47736940843\Documents\Exercicios-Sprint-3\RoleTop\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\MudarInformacao.g.cshtml.cs
-C:\Users\47736940843\Documents\Exercicios-Sprint-3\RoleTop\obj\Debug\netcoreapp2.2\Razor\Views\Administrador\Dashboard.g.cshtml.cs
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\RoleTop\obj\Debug\netcoreapp2.2\Razor\Views\Administrador\Pendentes.g.cshtml.cs
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\RoleTop\obj\Debug\netcoreapp2.2\Razor\Views\Administrador\Aprovados.g.cshtml.cs
+C:\Users\47736940843\Documents\Exercicios-Sprint-3\RoleTop\obj\Debug\netcoreapp2.2\Razor\Views\Administrador\Reprovados.g.cshtml.cs

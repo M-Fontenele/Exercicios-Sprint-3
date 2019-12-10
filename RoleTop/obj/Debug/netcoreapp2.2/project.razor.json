@@ -2961,6 +2961,11 @@
   "RootNamespace": "RoleTop",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\RoleTop\\Views\\Administrador\\Aprovados.cshtml",
+      "TargetPath": "Views\\Administrador\\Aprovados.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\RoleTop\\Views\\Galeria\\Balada.cshtml",
       "TargetPath": "Views\\Galeria\\Balada.cshtml",
       "FileKind": "mvc"
@@ -2971,8 +2976,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\RoleTop\\Views\\Administrador\\Dashboard.cshtml",
-      "TargetPath": "Views\\Administrador\\Dashboard.cshtml",
+      "FilePath": "c:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\RoleTop\\Views\\Administrador\\Pendentes.cshtml",
+      "TargetPath": "Views\\Administrador\\Pendentes.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -3073,6 +3078,11 @@
     {
       "FilePath": "c:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\RoleTop\\Views\\Galeria\\OutrosEventos.cshtml",
       "TargetPath": "Views\\Galeria\\OutrosEventos.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\RoleTop\\Views\\Administrador\\Reprovados.cshtml",
+      "TargetPath": "Views\\Administrador\\Reprovados.cshtml",
       "FileKind": "mvc"
     }
   ],
