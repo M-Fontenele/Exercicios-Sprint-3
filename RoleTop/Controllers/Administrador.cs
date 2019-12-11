@@ -84,5 +84,44 @@ namespace RoleTop.Controllers
                 });
             }
         }
+
+        public IActionResult Aprovar (ulong id)
+        {
+            var e = AgendaRepository.ObterPor(id);
+            e.Status = (uint) StatusPedido.APROVADO;
+
+            if(AgendaRepository.Atualizar(e))
+            {
+                return RedirectToAction ("Pendentes", "Administrador");
+            }
+            else
+            {
+                return View("Erro", new RespostaViewModel("Não foi possivel aprovar esse evento")
+                {
+                    NomeView = "Administrador",
+                    UsuarioEmail = ObterUsuarioSession(),
+                    UsuarioNome = ObterUsuarioNomeSession()
+                });
+            }
+        }
+        public IActionResult Reprovar (ulong id , string pagina)
+        {
+            var e = AgendaRepository.ObterPor(id);
+            e.Status = (uint) StatusPedido.REPROVADO;
+
+            if(AgendaRepository.Atualizar(e))
+            {
+                return RedirectToAction ($"{pagina}", "Administrador");
+            }
+            else
+            {
+                return View("Erro", new RespostaViewModel("Não foi possivel aprovar esse evento")
+                {
+                    NomeView = "Administrador",
+                    UsuarioEmail = ObterUsuarioSession(),
+                    UsuarioNome = ObterUsuarioNomeSession()
+                });
+            }
+        }
     }
 }

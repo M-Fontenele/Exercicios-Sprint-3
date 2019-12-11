@@ -82,6 +82,21 @@ namespace RoleTop.Repositories
             }
             return null;
         }
+        public Agendar ObterPorData(DateTime dataMes)
+        {
+            var mes = dataMes.Month;
+            var todosEventos = ObterTodos();
+            List<Agendar> eventosDesseMes = new List<Agendar>();
+            foreach (var item in todosEventos)
+            {
+                var mesEvento =item.DiaDoEvento.Month;
+                if(mesEvento == mes)
+                {
+                    eventosDesseMes.Add(item);
+                }
+            }
+            return null;
+        }
 
         public bool Atualizar (Agendar agendar)
         {

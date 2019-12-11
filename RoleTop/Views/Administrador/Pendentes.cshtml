@@ -9,26 +9,32 @@
     </section>
 
     <div id="box-principal">
-        <div id="box-pendente" class="box-pedidos">
-            <div>
-                Pendentes
+        <a asp-controller="Administrador" asp-action="Pendentes">
+            <div id="box-pendente" class="box-pedidos">
+                <div>
+                    Pendentes
+                    </div>
+                <div>@Model.EventosPendentes</div>
+            </div>
+        </a>
+
+        <a asp-controller="Administrador" asp-action="Aprovados">
+            <div id="box-aprovado" class="box-pedidos">
+                <div>
+                    Aprovados
                 </div>
-            <div>@Model.EventosPendentes</div>
-        </div>
-
-        <div id="box-aprovado" class="box-pedidos">
-            <div>
-                Aprovados
+                <div>@Model.EventosAprovados</div>
             </div>
-            <div>@Model.EventosAprovados</div>
-        </div>
+        </a>
 
-        <div id="box-reprovado" class="box-pedidos">
-            <div>
-                Reprovados
+        <a asp-controller="Administrador" asp-action="Reprovados">
+            <div id="box-reprovado" class="box-pedidos">
+                <div>
+                    Reprovados
+                </div>
+                <div>@Model.EventosReprovados</div>
             </div>
-            <div>@Model.EventosReprovados</div>
-        </div>
+        </a>
     </div>
     
         <table>
@@ -58,8 +64,8 @@
                                     <td>@item.TipoDeEvento</td>
                                     <td>@item.DiaDoEvento</td>
                                     <td>@item.DescricaoEvento</td>
-                                    <td><i class="fas fa-check" id="aceitar"></i></td>
-                                    <td><i class="fas fa-times" id="recusar"></i></td>
+                                    <td><a href='@Url.Action("Aprovar", "Administrador", new {id = @item.Id})'><i class="fas fa-check" id="aceitar"></i></a></td>
+                                    <td><a href='@Url.Action("Reprovar", "Administrador", new {id = @item.Id, pagina = "Pendentes"})'><i class="fas fa-times" id="recusar"></i></a></td>
                                 </tr>
                                 }
                             }
