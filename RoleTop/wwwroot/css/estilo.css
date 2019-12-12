@@ -2,8 +2,7 @@
                                                 INICIO - BANNER 
  ==================================================================================================================*/
 
-.texto-banner {
-        background-image: url(img/banner1-editado.jpg);
+#textoBanner {
         background-repeat: no-repeat;
         background-size: cover;
         height: 536px;
@@ -11,6 +10,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+}
+
+.botaoBanner {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: #ffffff
 }
 
 /*===================================================================================================================
@@ -78,7 +84,7 @@
 
 /* calendario tabela */
 
- #calendario-tabela {
+#calendario-tabela {
         display: flex;
         justify-content: center;
 }

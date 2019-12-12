@@ -82,7 +82,7 @@ namespace RoleTop.Repositories
             }
             return null;
         }
-        public Agendar ObterPorData(DateTime dataMes)
+        public List<Agendar> ObterPorData(DateTime dataMes)
         {
             var mes = dataMes.Month;
             var todosEventos = ObterTodos();
@@ -95,7 +95,7 @@ namespace RoleTop.Repositories
                     eventosDesseMes.Add(item);
                 }
             }
-            return null;
+            return eventosDesseMes;
         }
 
         public bool Atualizar (Agendar agendar)

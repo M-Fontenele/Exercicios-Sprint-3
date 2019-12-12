@@ -17,7 +17,7 @@ namespace RoleTop.Controllers
         {
 
 
-            return View(new BaseViewModel(){
+            return View(new HomeViewModel(DateTime.Now){
                 NomeView = "Home",
                 UsuarioEmail = ObterUsuarioSession(),
                 UsuarioNome = ObterUsuarioNomeSession()
