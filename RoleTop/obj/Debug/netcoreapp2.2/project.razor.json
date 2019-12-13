@@ -3081,6 +3081,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\RoleTop\\Views\\Home\\Eventospublicos.cshtml",
+      "TargetPath": "Views\\Home\\Eventospublicos.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\47736940843\\Documents\\Exercicios-Sprint-3\\RoleTop\\Views\\Administrador\\Reprovados.cshtml",
       "TargetPath": "Views\\Administrador\\Reprovados.cshtml",
       "FileKind": "mvc"

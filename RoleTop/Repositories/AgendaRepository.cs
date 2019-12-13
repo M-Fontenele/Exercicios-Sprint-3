@@ -64,6 +64,7 @@ namespace RoleTop.Repositories
                 agenda.DataDoRegistro = DateTime.Parse(ExtrairValorDoCampo("diaDoRegistro",linha));
                 agenda.DescricaoEvento = ExtrairValorDoCampo("descricao",linha);
                 agenda.PrecoTotal = double.Parse(ExtrairValorDoCampo("precoTotal",linha));
+                agenda.PublicoePrivado = bool.Parse(ExtrairValorDoCampo("privadopublico", linha));
 
                 agendar.Add(agenda);
             }
@@ -128,7 +129,7 @@ namespace RoleTop.Repositories
             Cliente c = agendar.Cliente;
             PlanoEvento pe = agendar.PlanoEvento;
 
-            return $"id={agendar.Id};status_pedido={agendar.Status};cliente_nome={c.Nome};cliente_email={c.Email};cliente_cpf={c.CPF};cliente_telefone={c.Telefone};nome_Evento={agendar.NomeDoEvento};tipos_Eventos={agendar.TipoDeEvento};outro_Tipo_De_Evento={agendar.Complemento};planoDeEvento={agendar.PlanoEvento.Nome};dataEvento={agendar.DiaDoEvento};diaDoRegistro={agendar.DataDoRegistro};descricao={agendar.DescricaoEvento};precoTotal={agendar.PrecoTotal}"; 
+            return $"id={agendar.Id};status_pedido={agendar.Status};privadopublico={agendar.PublicoePrivado};cliente_nome={c.Nome};cliente_email={c.Email};cliente_cpf={c.CPF};cliente_telefone={c.Telefone};nome_Evento={agendar.NomeDoEvento};tipos_Eventos={agendar.TipoDeEvento};outro_Tipo_De_Evento={agendar.Complemento};planoDeEvento={agendar.PlanoEvento.Nome};dataEvento={agendar.DiaDoEvento};diaDoRegistro={agendar.DataDoRegistro};descricao={agendar.DescricaoEvento};precoTotal={agendar.PrecoTotal}";
         }
     }
 }

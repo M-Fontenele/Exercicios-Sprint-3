@@ -79,8 +79,11 @@ namespace RoleTop.Controllers
         {
             var emailCliente = HttpContext.Session.GetString(SESSION_CLIENTE_EMAIL);
             var agendaCliente = AgendaRepository.ObterTodosPorCliente(emailCliente);
+
+            var c = clienteRepository.ObterPor(ObterUsuarioSession());
             return View(new MeusEventosViewModel()
             {
+                Cliente = c,
                 Agendar = agendaCliente,
                 NomeView = "MeusEventos",
                 UsuarioEmail = ObterUsuarioSession(),
@@ -107,16 +110,23 @@ namespace RoleTop.Controllers
 
                 HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, c.Email);
                 HttpContext.Session.SetString(SESSION_CLIENTE_NOME, c.Nome);
+
+                var n = clienteRepository.ObterPor(ObterUsuarioSession());
                 return View("Sucesso", new RespostaViewModel()
                 {
+                    Cliente = n,
                     NomeView = "InfoUsuario",
                     UsuarioEmail = ObterUsuarioSession(),
                     UsuarioNome = ObterUsuarioNomeSession()
                 });
             }
             else{
+
+                var n = clienteRepository.ObterPor(ObterUsuarioSession());
+
                 return View("Erro", new RespostaViewModel()
                 {
+                    Cliente = n,
                     NomeView = "InfoUsuario",
                     UsuarioEmail = ObterUsuarioSession(),
                     UsuarioNome = ObterUsuarioNomeSession()

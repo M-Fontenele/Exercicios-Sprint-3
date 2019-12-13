@@ -65,7 +65,10 @@
         background-color: #7d0093;
 } */
 
-
+#eventopublico {
+        display: flex;
+        justify-content: center;
+}
 
 .text-comeco-calendario {
         margin: 10px;

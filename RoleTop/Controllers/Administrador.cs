@@ -48,9 +48,14 @@ namespace RoleTop.Controllers
             }
             else
             {
+                var c = clienteRepository.ObterPor(ObterUsuarioSession());
+
                 return View("Erro", new RespostaViewModel("Você não pode acessar essa pagina")
                 {
-                    NomeView = "Login"
+                    Cliente = c,
+                    NomeView = "Login",
+                    UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
                 });
             }
         }

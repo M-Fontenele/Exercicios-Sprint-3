@@ -43,6 +43,7 @@ namespace RoleTop.Controllers
 
             agenda.NomeDoEvento = form["nomeDoEvento"];
             agenda.TipoDeEvento = form["tipoDeEvento"];
+            agenda.PublicoePrivado = bool.Parse(form["publicoprivado"]);
 
             var nomePlanoEvento = form["planoDeEvento"];
             PlanoEvento planoEvento = new PlanoEvento();

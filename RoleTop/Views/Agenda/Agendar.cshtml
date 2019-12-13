@@ -93,6 +93,16 @@
                 <input id="numero" type="text" name="telefone" maxlength="30" minlength="3" required value=@Model.Cliente.Telefone>
             
             </div>
+            <div class="informacao">
+
+                <label for="publico">Publico</label>
+                <input id="publico" type="radio" name="publicoprivado" value="True">
+            </div>
+            <div class="informacao">
+
+                <label for="privado">Privado</label>
+                <input id="privado" type="radio" name="publicoprivado" value="False">
+            </div>
 
             <div id="finalizar-agendamento">
                 <input class="botao" type="submit" value="Cadastrar Evento">

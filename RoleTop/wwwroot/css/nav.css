@@ -43,7 +43,8 @@
 #bt-menu {
     display: none;
 }
-#menu-r{
+
+#bt-mobile-menu{
     margin-left: 180px; 
     visibility: hidden;
 }
@@ -198,20 +199,37 @@ header{
     }
 
     .parte {
-        width: 200px;
-        position: relative;
-        border-top: 1.95em solid #ffc600;
-        border-left: 2em solid transparent;
-        border-right: 2em solid transparent;
+        visibility: hidden;
     }
     
     .parte1 {
-        width: 110px;
-        position: relative;
-        height: 0.1em;
-        border: 0.1em solid #ffc600;
-        border-radius: 0 0 50px 50px;
-        left: 46.5px;
-        top: -3.5px;
+        visibility: hidden;
+    }
+    nav #bt-mobile-menu {
+        display: block;
+    }
+
+    nav .bt-common-menu {
+        display: none;
+    }
+
+    nav .bt-common-menu.active {
+        display: block;
+    }
+
+    nav ul.mobile-mode {
+        display: flex;
+        flex-direction: column;
+    }
+    #bt-mobile-menu{
+        margin-left: 20px; 
+        visibility: visible;
+    }
+    #usuario {
+        margin-top: 0.8em;
+        margin-right: 100px;
+    }
+    #login {
+        margin-right: 50px;
     }
 }

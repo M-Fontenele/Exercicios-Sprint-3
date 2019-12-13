@@ -16,6 +16,9 @@ namespace RoleTop.Models
         public string Complemento {get;set;}
         public string DescricaoEvento {get;set;}
         public uint Status {get;set;}
+        public bool PublicoePrivado {get;set;}
+
+        public bool Pagamento {get;set;}
 
         public Agendar()
         {
